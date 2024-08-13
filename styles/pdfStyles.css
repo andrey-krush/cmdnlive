@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+
+table {
+    border-spacing: 0px
+}
+
+p {
+    margin: 0;
+}
+
+.pdf {
+    background:F2F2F2;
+    font-family: "Helvetica";
+}
+
+.pdf__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #212121;
+    padding: 20px 0 ;
+}
+.pdf__header-img{
+    width: 118px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+
+.pdf__qr {
+    display: flex;
+}
+
+.pdf__qr-img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.pdf__title {
+    font: 400 36px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__date {
+    font: 400 28px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__place {
+    font: 400 28px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__sponsored {
+    font: 400 20px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__link {
+    font: 400 20px / 150% "Helvetica", sans-serif;
+    color: #D98C72;
+    text-decoration: underline;
+}
+
+.pdf__owner {
+    font: 400 20px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__type {
+    font: 700 20px / 150% "Helvetica", sans-serif;
+}
+
+.pdf__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+@media print {
+    * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}

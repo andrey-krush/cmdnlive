@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css styles/plagins.css -->
+    <link rel="stylesheet" href="styles/formstyler.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- add you plagin css here -->
+
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+
+    <link rel="stylesheet" href="styles/critical.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- add you develop css here -->
+
+    <!-- endbuild -->
+
+</head>
+<body>
+
+<div class="wrap">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__block">
+                <a href="" class="header__logo header__logo-mob img">
+                    <img src="../img/logo.svg" alt="">
+                </a>
+                <div class="header__mob">
+                    <div class="header__icon header__search"></div>
+                    <form action="" class="header__search-form">
+                        <div class="header__search-back"></div>
+                        <div class="header__search-block container">
+                            <input type="text" name="search" placeholder="Start your search...">
+                            <input type="hidden" name="action" value="search">
+                            <div class="header__search-button">
+                                <button type="submit"></button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="header__button header__button-mob">
+                        <a class="header__icon header__user"></a>
+                        <div class="header__icon header__bag"></div>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+    
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="">Get Tickets</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">CMDN Merch</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">Bands</a>
+                    </li>
+                    <li class="header__item ">
+                        <a href="" class="header__logo img">
+                            <img src="../img/logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">New Releases</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">Bands Wanted</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">About CMDN</a>
+                    </li>
+                </ul>
+                <div class="header__button">
+                    <div class="header__icon header__user"></div>
+                    <div class="header__icon header__bag"></div>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <!-- /HEADER -->
+
+    <main class="wrap__main" >
+
+        <section class="delivery">
+            <div class="delivery__block">
+                <div class="main__back img">
+                    <img src="img/delivery-back.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                    </div>
+                    <div class="delivery__title">
+                        <h2>Free shipping for orders over £100</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="container">
+                <h1 class="section__title">
+                    shop
+                </h1>
+                <div action="" class="filter__mob-wrap ">
+                    <form action="" class="filter__form shop__form">
+                        <div class="filter__mob-header">
+                            <a href="" class="filter__mob-logo img">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <div class="filter__mob-close"></div>
+                        </div>
+                        <div class="filter__mob">
+                            <button type="button" class="filter__mob-event">
+                                Filter
+                            </button>
+                        </div>
+                        <div class="tickets__filter filter shop__filter">
+                            <div class="filter__item filter__sort filter__dropdown">
+                                <input type="text" class="filter__sort-input" name="sort" hidden>
+                                <div class="filter__header">Sort by</div>
+                                <div class="filter__inner">
+                                    <div class="filter__inner-item">Latest</div>
+                                    <div class="filter__inner-item">Low price to High price</div>
+                                    <div class="filter__inner-item">High price to Low price</div>
+                                    <div class="filter__inner-item">Popular</div>
+                                    <div class="filter__inner-item">Recommended</div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" hidden name="action" value="show__item">
+                        <input type="text" hidden name="categories" value="" class="categories__input">
+                        <input type="text" hidden name="page" value="1" class="page">
+                        <div class="filter__mob-button">
+                            <button type="submit" class="section__button filter__mob-show">Show (100)</button>
+                            <button type="reset" class="filter__mob-reset">Reset changes</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="shop__categories tickets__categories">
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/winter-jacket.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">Jackets</div>
+                    </a>
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/cardigan.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">T-shirts</div>
+                    </a>
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/hoodie.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">T-shirts</div>
+                    </a>
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/shirt.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">Cardigans</div>
+                    </a>
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/winter-jacket.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">Cardigans</div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/winter-jacket.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">Cardigans</div>
+                    </a>
+                    <a href="#">
+                        <div class="shop__categories-img img">
+                            <img src="img/winter-jacket.svg" alt="">
+                        </div>
+                        <div class="tickets__categories-name">Cardigans</div>
+                    </a>
+                </div>
+                <div class="shop__block">
+                    <ul class="shop__list">
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop123.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop234.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop345.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop123.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop234.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                        <li class="shop__item">
+                            <div class="shop__img img"><img src="img/shop345.png" alt=""></div>
+                            <div class="shop__desc">
+                                <h3 class="shop__title">Boudicca Slayer on Black Vest</h3>
+                                <h4 class="tickets__price">$ 1</h4>
+                                <a class="shop__link" href="#">Details</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="section__button section__load shop__load">
+                        load more
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="adv__wrap">
+            <div class="container">
+                <div class="adv">
+                    <div class="adv__img img">
+                        <img src="img/adv.png" alt="">
+                    </div>
+                    <div class="adv__block">
+                        <div class="adv__text">
+                            <h3>Enter Shikari:“There’s always some form of hope ready to be grasped, there’s always a possibility of something better”</h3>
+                            <p>Releasing their previous album into the void of the pandemic, Enter Shikari were lost at sea. But, after a lengthy period of “soul-searching” they have returned with their most uplifting album yet,</p>
+                            <p>A Kiss For The Whole World, and a new vision for the future. On the eve of its release, Rou Reynolds reveals all…</p>
+                        </div>
+                        <a href="" class="section__button">View now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <section>
+        <div class="modal modal__subs" >
+            <div class="modal__wrap">
+                <div class="modal__content modal__content-full">
+                    <div class="modal__close img">
+                        <img src="../img/close.svg" alt="">
+                    </div>
+                    <div class="modal__overflow">
+                        <div class="modal__title">
+                            <h2 >Thank you for subscribing</h2>
+                        </div>
+                        <div class="modal__subtitle">
+                            <h3>We promise to send you only the most useful news. Now you will always be aware of all promotional offers!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal__map" >
+            <div class="modal__wrap">
+                <div class="modal__content modal__content-full">
+                    <div class="modal__close img">
+                        <img src="../img/close.svg" alt="">
+                    </div>
+                    <div class="modal__overflow">
+                        <div class="map" id="map"></div>
+    
+                        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                        ({key: "AIzaSyD9t6y_rTxoWt6u8nts6ITbjapp79ODL1U", v: "weekly"});</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="modal modal__auth" >
+            <div class="modal__wrap">
+                <!--modal sign in-->
+                <div class="modal__content modal__enter">
+                        <div class="modal__close img">
+                            <img src="../img/close.svg" alt="">
+                        </div>
+                        <div class="modal__overflow">
+                            <div class="modal__title">
+                                <h2>Sign In</h2>
+                            </div>
+                            <form action="" class="modal__form modal__form-enter ">
+                                <div class="modal__form-content">
+                                    <input name="email" id="email" type="email"/>
+                                    <label class="label" for="email">Email</label>
+                                </div>
+                                <div class="modal__form-content modal__form-password">
+                                    <input name="password" id="passwordEnter" type="password"/>
+                                    <label class="label" for="passwordEnter">Password</label>
+                                    <div class="modal__form-eye"></div>
+                                </div>
+                                <div class="modal__flex">
+                                    <div class="modal__form-content modal__checkbox">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="remember" checked name="remember">
+                                            <label for="remember">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal__text"><span class="modal__enter-forget">Forgot password?</span></div>
+                                </div>
+    
+                                <button type="submit" class="section__btn">Login</button>
+                            </form>
+                            <div class="modal__text modal__text-bottom">Don’t have an account? <span class="modal__enter-reg ">Create now</span> </div>
+                        </div>
+                </div>
+    
+                <!-- modal sign up-->
+                <div class="modal__content modal__reg">
+                        <div class="modal__close img">
+                            <img src="../img/close.svg" alt="">
+                        </div>
+                        <div class="modal__overflow">
+                            <div class="modal__title">
+                                <h2>Sign Up</h2>
+                            </div>
+                            <form action="" class="modal__form modal__form-reg">
+                                <div class="modal__form-content">
+                                    <input name="name" id="firstname" type="text"/>
+                                    <label class="label" for="firstname">First name</label>
+                                </div>
+                                <div class="modal__form-content">
+                                    <input name="lastname" id="lastname" type="text"/>
+                                    <label class="label" for="lastname">Last name</label>
+                                </div>
+                                <div class="modal__form-content">
+                                    <input name="email" type="email" id="emailReg"/>
+                                    <label class="label" for="emailReg">Email</label>
+                                </div>
+                                <div class="modal__form-content modal__form-password">
+                                    <input name="password" type="password" id="passwordReg"/>
+                                    <label class="label" for="passwordReg">Create account password</label>
+                                    <div class="modal__form-eye"></div>
+                                </div>
+                                <div class="modal__title modal__title-role">
+                                    <h2>Select your role</h2>
+                                </div>
+                                <div class="modal__form-content">
+                                    <div class="filter__item modal__dropdown filter__dropdown">
+                                        <div class="filter__header">Select here</div>
+                                        <input type="text" class="filter__sort-input" name="role" hidden>
+                                        <div class="filter__inner">
+                                            <div class="filter__inner-item">admin1</div>
+                                            <div class="filter__inner-item">admin2</div>
+                                            <div class="filter__inner-item">admin3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__reg-btn" >
+                                    <button type="submit" class="section__btn">Create my account</button>
+                                    <div class="modal__text modal__text-bottom" >Already have an account? <span class="modal__reg-enter" >Sign in</span></div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <div class="modal__content modal__reg-success">
+                    <div class="modal__close img">
+                        <img src="../img/close.svg" alt="">
+                    </div>
+                    <div class="modal__overflow">
+                        <div class="modal__title">
+                            <h2>Thank you for registration</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal forgot password-->
+                <div class="modal__content modal__forget">
+                    <div class="modal__close img">
+                            <img src="../img/close.svg" alt="">
+                        </div>
+                    <div class="modal__overflow">
+                            <div class="modal__title">
+                                <h2>Forgot your password?</h2>
+                            </div>
+                            <form action="" class="modal__form modal__form-forget">
+                                <div class="modal__form-content">
+                                   <input name="email" type="email" id="passwordForgot"/>
+                                    <label class="label" for="passwordForgot">Your email</label>
+                                </div>
+                                <button type="submit" class="section__btn">Change password</button>
+                            </form>
+                        </div>
+                </div>
+    
+                <div class="modal__content modal__forget-mail ">
+                        <div class="modal__close img">
+                               <img src="../img/close.svg" alt="">
+                        </div>
+                        <div class="modal__overflow">
+                            <div class="modal__title">
+                                <h2>We send a message to your email</h2>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="modal modal__password" >
+            <div class="modal__wrap">
+                <div class="modal__content ">
+                    <div class="modal__close img">
+                        <img src="../img/close.svg" alt="">
+                    </div>
+                    <div class="modal__overflow">
+                        <div class="modal__title">
+                            <h2 >Password changed successfully</h2>
+                        </div>
+                        <button class="modal__ok section__btn" >
+                            Okay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <footer class="footer">
+        <div class="main__back img">
+            <img src="img/back-img.png" alt="">
+        </div>
+        <div class="container">
+            <div class="footer__block">
+                <a href="" class="footer__logo img">
+                    <img src="../img/logo-footer.svg" alt="">
+                </a>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="">About Camden Live</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="">Terms</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="">Buy CMDN Show Tickets</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="">Buy CMDN TShirts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- /FOOTER -->
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- build:js scripts/validate_script.js -->
+<!--<script type="text/javascript" src="scripts/validate_script.js" ></script>-->
+<!-- endbuild -->
+
+<!-- build:js scripts/plagins.js -->
+<script type="text/javascript" src="scripts/plagins/device.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.fancybox.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.formstyler.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.easy-ticker.min.js"></script>
+<script type="text/javascript" src="scripts/plagins/maskInput.js" ></script>
+<script type="text/javascript" src="scripts/plagins/slick.js" ></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9t6y_rTxoWt6u8nts6ITbjapp79ODL1U&callback=initMap"></script>
+
+
+<script type="text/javascript" src="scripts/plagins/jquery.validate.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- add you plagins js here -->
+
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script type="text/javascript" src="scripts/basic_scripts.js" ></script>
+<script type="text/javascript" src="scripts/develop/index.js" ></script>
+    <!-- add you develop js here -->
+<!-- endbuild -->
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>

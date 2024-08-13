@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label</title>
+</head>
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    h1, h2, h3 {
+        margin: 10px 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .img > img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        display: block;
+    }
+
+    table {
+        border-spacing: 0
+    }
+
+    p {
+        margin: 0;
+    }
+    .pdf__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+
+    }
+    .pdf {
+        background:#F2F2F2;
+        font-family: "Helvetica";
+
+    }
+
+    .pdf__header {
+
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*margin-bottom: 20px;*/
+        background: #212121;
+        padding: 20px 0 ;
+
+    }
+    .pdf__logo{
+        width: 118px;
+        height: 62px;
+        margin: 0 auto;
+    }
+    .pdf__wrap{
+        flex-grow: 1;
+        padding: 40px 30px;
+    }
+
+
+    /*.pdf__qr {*/
+    /*    display: flex;*/
+    /*}*/
+    .pdf__qr{
+        display: flex;
+        gap:30px
+    }
+    .pdf__qr-img{
+        /*float: left;*/
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+    }
+    /*.pdf__desc{*/
+    /*    float: right;*/
+    /*    width: 78%;*/
+    /*}*/
+    .pdf__price{
+        color:#797670;
+        font: 400 10px / 11.5px "Helvetica", sans-serif;
+        margin-bottom: 6px;
+    }
+    .pdf__order{
+        color:#797670;
+        font: 400 10px / 11.5px "Helvetica", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .pdf__title {
+        font: 700 20px / 23px "Helvetica", sans-serif;
+        color:#212121;
+        margin-bottom: 10px;
+    }
+
+    .pdf__date {
+        font: 400 12px / 13.8px "Helvetica", sans-serif;
+        color:#212121;
+        margin-bottom: 8px;
+    }
+
+    .pdf__place {
+        font: 400 12px / 13.8px "Helvetica", sans-serif;
+        color:#212121;
+        margin-bottom: 4px;
+    }
+    .pdf__address{
+        font: 400 12px / 13.8px "Helvetica", sans-serif;
+        color:#9E9B94;
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+
+    .pdf__owner {
+        font: 400 12px / 13.8px "Helvetica", sans-serif;
+        color: #212121;
+        margin-bottom: 8px;
+    }
+
+    .pdf__type {
+        font: 700 12px / 13.8px "Helvetica", sans-serif;
+        color: #212121;
+    }
+
+    .pdf__ticket{
+        display: flex;
+        gap:30px
+    }
+
+    .pdf__img {
+        width: 200px;
+        min-width: 200px;
+        height: auto;
+        /*float: left;*/
+    }
+    .pdf__ticket-desc{
+        /*float: right;*/
+        /*width: 78%;*/
+    }
+    .pdf__visa{
+        margin: 6.7rem 0 3rem;
+        background: #fff;
+        border: 2px solid #212121;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap:10px
+    }
+    .pdf__visa h3{
+        font: 700 10px / 11.5px "Helvetica", sans-serif;
+    }
+    .pdf__visa-img{
+        width: 9.2rem;
+        height: auto;
+    }
+
+    .pdf-footer{
+        background: #212121;
+        padding: 20px 26px;
+    }
+    .pdf-footer>*{
+        font: 400 12px / 13.8px "Helvetica", sans-serif;
+        color: #FFF;
+    }
+    .pdf-footer a{
+        color: #D98C72;
+        text-decoration-line: underline;
+    }
+
+    @media print {
+        * {
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+    }
+
+
+    /*.pdf{*/
+    /*    width: 100vw;*/
+    /*}*/
+    /*.pdf__header{*/
+    /*    width: 100%;*/
+    /*    background: #212121;*/
+    /*    padding: 20px 0;*/
+    /*}*/
+    /*.pdf__logo{*/
+    /*   width: 118px;*/
+    /*    height: 62px;*/
+    /*}*/
+    /*.pdf__qr-img{*/
+
+    /*}*/
+</style>
+
+
+<body>
+
+
+<div class="pdf">
+    <div class="pdf__container container">
+        <div class="pdf__header">
+            <div class="pdf__logo">
+                <img src="img/logo-white.svg" alt="">
+            </div>
+        </div>
+        <div class="pdf__wrap">
+            <div class="pdf__qr">
+                <div class="pdf__qr-img img">
+                    <img src="img/QR.png" alt="">
+                </div>
+                <div class="pdf__desc">
+                    <h2 class="pdf__price">Price: £10.00. Operator services: £ 0.10</h2>
+                    <h2 class="pdf__order">Order: 526985691, 06/04/2023, 14:35</h2>
+                    <h1 class="pdf__title">NAME OF CONCERT</h1>
+                    <h2 class="pdf__date">21 December</h2>
+                    <h2 class="pdf__place">Jazz Cafe</h2>
+                    <h2 class="pdf__address">Kyiv, str. Knyazou Ostrozkih, 8</h2>
+                    <h2 class="pdf__owner">Ticket owner: John Dow</h2>
+                    <h2 class="pdf__type">VIP</h2>
+                </div>
+            </div>
+            <div class="pdf__ticket">
+                <div class="pdf__img img">
+                    <img src="img/post2.png" alt="">
+                </div>
+                <div class="pdf__ticket-desc">
+                   <h2>THIS IS YOUR TICKET!</h2>
+                   <h3>PRINT AND SHOW THE ENTIRE LETTER AT THE ENTRANCE.</h3>
+                   <p>A unique barcode can only be used once. Do not copy this ticket or publish it on the Internet. This may prevent you from entering the event. The organizer is not responsible for saving data.</p>
+                </div>
+            </div>
+            <div class="pdf__visa">
+                <h3>Sponsored: Visa</h3>
+                <div  class="pdf__visa-img">
+                    <img src="img/Visa.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="pdf-footer">
+            <h2 class="pdf__sponsored">Sponsored by CMDN Live: <a href="">https://dev.cmdn.sheep.fish/show/show/</a></h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>
